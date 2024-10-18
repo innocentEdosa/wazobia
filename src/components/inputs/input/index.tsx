@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <label>
-      {label && <span>{label}</span>}
+      {label && <span className={styles.label}>{label}</span>}
       <input
         data-variant={variant}
         type={type}

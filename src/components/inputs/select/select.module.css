@@ -1,0 +1,25 @@
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    color: var(--text-300);
+    font-family: var(--primary-font-family);
+    display: inline-block;
+    font-size: 10px;
+}
+
+.select { 
+    padding: 8px 16px;
+    background-color: var(--base-white-050);
+    border: 1px solid var(--primary-color-300);
+    color: var(--text-100);
+    outline: none;
+    box-shadow: none;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--primary-font-family);
+    font-size: 12px;
+
+}

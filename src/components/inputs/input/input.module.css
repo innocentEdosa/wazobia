@@ -1,23 +1,44 @@
 .input {
-    width: 100%;
-    font-family: var(--primary-font-family);
-    padding: 16px;
+  width: 100%;
+  font-family: var(--primary-font-family);
+  padding: 16px;
+  border-radius: var(--border-radius-sm);
 }
 
+.label {
+  color: var(--text-300);
+  font-family: var(--primary-font-family);
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 10px;
+}
+
+/* primary input */
+
+.input[data-variant="primary"] {
+  padding: 8px 16px;
+  background-color: var(--base-white-050);
+  border: 1px solid var(--primary-color-300);
+  color: var(--text-100);
+  outline: none;
+  box-shadow: none;
+  font-size: 12px;
+}
+
+/* secondary input */
+
 .input[data-variant="secondary"] {
-    border: none;
-    outline: none;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--text-100);
-    line-height: 36px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-100);
+  line-height: 36px;
 }
 
 .input[data-variant="secondary"]:placeholder {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--text-100);
-    opacity: .1;
-    
-
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-100);
+  opacity: 0.1;
 }

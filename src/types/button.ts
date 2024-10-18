@@ -2,6 +2,7 @@ import React from "react";
 
 export enum ButtonVariantEnum {
   PRIMARY = "primary",
+  SECONDARY = "secondary",
 }
 
 export interface ButtonProps {

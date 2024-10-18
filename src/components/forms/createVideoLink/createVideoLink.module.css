@@ -1,0 +1,13 @@
+.form {
+  margin-top: 14px;  
+}
+
+.inputWrapper + .inputWrapper { 
+    margin-top: 16px;
+}
+
+.buttonWrapper {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
