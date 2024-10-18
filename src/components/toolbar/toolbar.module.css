@@ -1,0 +1,27 @@
+.toolbarWrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--base-white);
+    border: 1px solid var(--primary-color-300);
+    border-radius: var(--border-radius-md);
+    overflow: visible;
+
+}
+
+.toolbarGroup {
+    display: flex;
+    flex-shrink: 0;
+    padding: 15px 12px 9px 12px;
+    gap: 16px;
+}
+
+.toolbarGroup  + .toolbarGroup  {
+    border-left:  1px solid var(--primary-color-300);;
+}
+
+.toolbarButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
