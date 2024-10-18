@@ -1,0 +1,23 @@
+.form {
+    width: 100%;
+    max-width: 662px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+}
+
+.inputWrapper {
+    border: 1px solid var(--primary-color-300);
+    border-radius: var(--border-radius-sm);
+    padding-top: 46px;
+    overflow: hidden;
+    font-family: var(--primary-font-family);
+    height: 767px;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
