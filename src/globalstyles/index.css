@@ -5,7 +5,9 @@
     --primary-color: #0A7227; 
     --primary-color-100: #23803D;
     --primary-color-200: #3B8E52;
+    --primary-color-300: #E7F1E9;
 
+    --text-100: #343E37;
 
     /* font */
     --primary-font-family: 'Open Sans', sans-serif; 
