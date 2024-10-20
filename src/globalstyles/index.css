@@ -9,6 +9,7 @@
     --primary-color-300: #E7F1E9;
     --primary-color-400: #CEE3D4;
 
+
     --text-100: #343E37;
     --text-200: #010E05;
     --text-300: #333333;
@@ -18,11 +19,13 @@
     --base-white-050: #FAFAFA;
     --base-black: #000;
     --base-black-025: #00000040;
+    --base-black-100: #CCCFCD;
     /* font */
     --primary-font-family: 'Open Sans', sans-serif; 
     
     
     /* dimensions */
+    --border-radius-xsm: 3px;
     --border-radius-sm: 4px;
     --border-radius-md: 5px;
 

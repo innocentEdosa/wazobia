@@ -1,18 +1,21 @@
 .editorWrapper {
-    border-top: 1px solid var(--primary-color-300);
     min-height: 200px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 6px;
-
 }
 
 .editor {
   padding: 0px 16px;
   flex-grow: 1;
   outline: none;
-  margin-top: 16px;
+  overflow: scroll;
+
+
+   > div {
+    height: 100%;
+   
+  }
 
 }
 
@@ -25,10 +28,13 @@
   color: var(--text-500);
   font-size: 10px;
   line-height: 18px;
+  font-family: var(--primary-font-family);
 }
 
 .toolBarWrapper {
     max-width: max-content;
     margin-left: 16px;
+    margin-bottom: 16px;
+
     
 }

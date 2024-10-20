@@ -5,6 +5,7 @@
     border: 1px solid var(--primary-color-300);
     border-radius: var(--border-radius-md);
     overflow: visible;
+    margin-top: 16px;
 
 }
 

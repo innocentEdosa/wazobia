@@ -1,5 +1,5 @@
 import { SVGProps } from "react"
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+const PlusIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
@@ -9,11 +9,11 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
-    className="feather feather-menu"
+    className="feather feather-plus"
     viewBox="0 0 24 24"
     {...props}
   >
-    <path d="M3 12h18M3 6h18M3 18h18" />
+    <path d="M12 5v14M5 12h14" />
   </svg>
 )
-export default SvgComponent
+export default PlusIcon

@@ -1,0 +1,87 @@
+.toggleButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-color-300);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.mediaEmbed {
+    position: relative;
+    width: max-content;
+}
+
+.mediaEmbed .menuList {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: var(--base-white);
+  width: 277px;
+  top: 37px;
+  border-radius: var(--border-radius-xsm);
+  box-shadow: 0px 1px 4px #00000014;
+}
+
+.menu[data-isopen="true"] {
+    display: block;
+  }
+  
+
+.menuHeader {
+  font-size: 10px;
+  color: var(--text-300);
+  line-height: 22px;
+  font-family: var(--primary-font-family);
+  padding: 8px 10px;
+}
+
+.menuItemIcon {
+    flex-shrink: 0;
+}
+
+.menuItem {
+ display: flex;
+ align-items: flex-start;
+ gap: 8px;
+ padding: 8px 10px;
+ font-family: var(--primary-font-family);
+ cursor: pointer;
+
+}
+
+.menuItem:hover {
+    background-color: var(--primary-color-50);
+}
+
+.menuItemContent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+
+}
+
+.menuItemTitle {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--primary-font-family);
+    color: var(--text-200);
+    margin-bottom: 3px;
+}
+
+.menuItemDescription {
+    font-size: 8px;
+    color: var(--text-100);
+
+
+
+}
+

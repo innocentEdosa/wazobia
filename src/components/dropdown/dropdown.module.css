@@ -22,6 +22,7 @@
     top: 35px;
     border: 1px solid var(--primary-color-300);
     border-radius: var(--border-radius-md);
+    z-index: 5;
     
 }
 

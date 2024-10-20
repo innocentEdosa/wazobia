@@ -1,22 +1,27 @@
-import { forwardRef } from "react";
-import { EditorProps } from "../../../types/editor";
+import { useEffect } from "react";
+import withEditor from "../../../hoc/withEditor";
+import { EditorContent } from "@tiptap/react";
+import "./styles.css";
 import styles from "./editor.module.css";
-import Input from "../input";
 import Toolbar from "../../toolbar";
 
-const Editor = forwardRef<HTMLDivElement, EditorProps>(() => {
+const Editor = withEditor(({ onChange,  editor, showToolbar, editorContent, handleToolbarItem }) => {
+
+  useEffect(() => {
+    if(editorContent) {
+      onChange?.(editorContent)
+    }
+  }, [editorContent])
+
+
   return (
     <div className={styles.editorWrapper}>
-      <Input placeholder="Add post title" />
       <div className={styles.toolBarWrapper}>
-      <Toolbar />
+        {/* @ts-expect-error no description*/}
+        {showToolbar && <Toolbar handleToolbarItem={handleToolbarItem} editor={editor} />}
       </div>
-      <div
-        contentEditable
-        className={styles.editor}
-        suppressContentEditableWarning
-      >
-        Editable content
+      <div className={styles.editor}>
+        <EditorContent editor={editor} />
       </div>
       <div className={styles.editorCount}>0/1000 words</div>
     </div>

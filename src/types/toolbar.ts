@@ -10,4 +10,5 @@ export interface ToolbarSchema {
 
 export interface ToolbarProps {
   schema?: ToolbarSchema;
+  handleToolbarItem: (params: { value?: string}) => () => void
 }

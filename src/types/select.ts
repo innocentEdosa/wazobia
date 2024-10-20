@@ -11,4 +11,5 @@ export interface SelectProps {
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
   label?: string;
   className?: string;
+  name?: string
 }

@@ -1,4 +1,5 @@
 import useElementToggle from "../../hooks/useElementToggle";
+import { useState, useEffect } from "react";
 import { DropdownProps } from "../../types/dropdown";
 import styles from "./dropdown.module.css";
 import ChevronDown from "../vectors/chevronDown";
@@ -12,10 +13,17 @@ const Dropdown: React.FC<DropdownProps> = ({
   const { dropdownRef, isOpen, toggleIsOpenHandler, closeHandler } =
     useElementToggle();
 
+    const [displayedValue, setDisplayedValue] = useState(value) 
+
+    useEffect(() => {
+      setDisplayedValue(value)
+    }, [])
+
   const handleOptionClick = (optionValue: string) => {
     if (onChange) {
       onChange(optionValue);
     }
+    setDisplayedValue(optionValue);
     closeHandler?.();
   };
 
@@ -26,8 +34,8 @@ const Dropdown: React.FC<DropdownProps> = ({
         className={styles.toggle}
         onClick={toggleIsOpenHandler}
       >
-        {value
-          ? options.find((option) => option.value === value)?.label
+        {displayedValue
+          ? options.find((option) => option.value === displayedValue)?.label
           : placeholder}
         <ChevronDown />
       </button>

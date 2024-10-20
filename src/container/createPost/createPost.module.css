@@ -4,16 +4,23 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
+}
+
+.editorWrapper {
+    height: 740px;
+}
+
+.headingWrapper {
+    border-top: 1px solid var(--primary-color-300);
+    margin-top: 46px;
 
 }
 
 .inputWrapper {
     border: 1px solid var(--primary-color-300);
     border-radius: var(--border-radius-sm);
-    padding-top: 46px;
     overflow: hidden;
     font-family: var(--primary-font-family);
-    height: 767px;
 }
 
 .buttonWrapper {

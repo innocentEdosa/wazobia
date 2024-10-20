@@ -7,6 +7,7 @@ const Select: React.FC<SelectProps> = ({
   value,
   onChange,
   label,
+  ...props
 }) => {
   const [selectedValue, setSelectedValue] = useState(value);
 
@@ -27,6 +28,7 @@ const Select: React.FC<SelectProps> = ({
         value={selectedValue}
         onChange={handleChange}
         className={styles.select}
+        {...props}
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>
