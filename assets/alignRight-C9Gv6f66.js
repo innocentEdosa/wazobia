@@ -1,0 +1,1 @@
+import{j as t}from"./index-CkpIGrWB.js";const o=e=>t.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:16,height:16,fill:"none",stroke:"currentColor",strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,className:"feather feather-align-right",viewBox:"0 0 24 24",...e,children:t.jsx("path",{d:"M21 10H7M21 6H3M21 14H3M21 18H7"})});export{o as default};
